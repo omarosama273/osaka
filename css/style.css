@@ -1,0 +1,171 @@
+    body {
+        /* font-family: var(--bs-body-font-family); */
+        font-family: 'Source Sans Pro', sans-serif;
+        box-sizing: border-box;
+    }
+    
+     :root {
+        --main-color: #ff206e;
+    }
+    
+    .navbar {
+        z-index: 99999;
+    }
+    
+    header {
+        background-image: url(../images/bg.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .social i {
+        border: 1px solid #333;
+        padding: 8px;
+        border-radius: 50%;
+        transition: all 1s;
+    }
+    
+    .social i:hover {
+        border: 1px solid #fff;
+    }
+    
+    .main-color {
+        color: #ff206e;
+    }
+    
+    .view {
+        transition: all 0.3s;
+    }
+    
+    .view:hover {
+        color: #fff;
+    }
+    
+    .title {
+        position: relative;
+    }
+    
+    .title h2 {
+        font-size: 60px;
+        color: #ccc;
+        font-weight: 700;
+        letter-spacing: 8px;
+    }
+    
+    .title h3 {
+        font-size: 40px;
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        letter-spacing: 5px;
+        transform: translate(-50%, -50%);
+    }
+    
+    #services {
+        background-image: url(../images/dark_dot.jpg);
+    }
+    
+    #services .title h2 {
+        color: #222;
+        letter-spacing: 8px;
+    }
+    
+    #services .title h3 {
+        color: #222;
+        letter-spacing: 5px;
+    }
+    
+    #services .service h4 {
+        position: relative;
+        margin: 20px 0;
+    }
+    
+    #services .service h4::after {
+        content: '';
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        background-color: #ff206e;
+        width: 50px;
+        height: 2px;
+        transform: translatex(-50%);
+    }
+    
+    #services .service i {
+        transition: all 0.5s;
+    }
+    
+    #services .service:hover i {
+        color: var(--main-color) !important;
+    }
+    
+    #portfolio .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        background: transparent;
+        color: #ff206e !important;
+    }
+    
+    .port-contant {
+        width: 90%;
+        left: 5%;
+        height: 90%;
+        bottom: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        transition: all 1s;
+    }
+    
+    .portfolio img {
+        transition: all 0.4s;
+    }
+    
+    .portfolio:hover .port-contant {
+        bottom: 10%;
+    }
+    
+    .portfolio:hover img {
+        filter: blur(3px);
+        transform: scale(1.2, 1.2);
+    }
+    
+    .portfolio-icon i {
+        border: 1px solid #333;
+        margin: 0 8px;
+        color: #fff;
+        border-radius: 50%;
+        background-color: #333;
+        padding: 12px;
+        transition: all 1s;
+    }
+    
+    .play {
+        font-size: 20px !important;
+        padding: 10px 13px !important;
+    }
+    
+    #testimonials .carousel-item img {
+        width: 10%;
+    }
+    
+    #testimonials .carousel-caption {
+        position: static;
+    }
+    
+    #testimonials .carousel-indicators [data-bs-target] {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #ccc !important;
+    }
+    
+    #testimonials .carousel-indicators .active {
+        background-color: rgb(34, 34, 34) !important;
+    }
+    
+    footer {
+        background-color: rgba(0, 0, 0, 0.959);
+    }
+    
+    .copyright {
+        background-color: rgba(2, 2, 2, 0.863);
+    }
